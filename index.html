@@ -1,674 +1,137 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, center=1.0">
-    <title >LIGAPRO2024  text-align: center; </title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif, sans-serif;
-            margin: 100px;
-            background-color: #b5dde9b6;
-        }
-        <!--PARA DEMOSTRAR LA PACION DEL FUTBOL-->
-        h1, h2, h3, h4  {
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css"> <!--enlaza un archivo de estilos CSS externo a una página web.-->
+    <title>Primara Página</title>
+    <!--estilos css-->
 
-            color: #ff0000; 
-            text-align: center;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 50px 0;
-        }
-        th, td {
-            border: 1px solid #050404;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #a5d81a;
-            color: rgb(3, 0, 0);
-        }
-        img {
-            width: 40px;
-            height: auto;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
 
-        img h4 {
-            width: 220px;
-            height: auto;
-            vertical-align: middle;
-            margin-right: 110px;
-        }
-    </style>
 </head>
+
 <body>
-        <!--logo de la pagina-->
-    <h1>
-        <img src="imagenes/LIGAPRO.png" alt="Logo LigaPro" width="200" height="90"> LIGAPRO2024   <img src="imagenes/LIGAPRO.png" alt="Logo LigaPro" width="200" height="90">
-    </h1>
-    <title>Buscador de Equipos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        #buscador {
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 8px;
-            border: 1px solid #ddd;
-            margin-top: 5px;
-        }
-    </style>
-</head>
-<body>
-<!--Buscador para encontrar al equipo de su preferencia-->
-<h1>Buscador </h1>
-<input type="text" id="buscador" placeholder="Buscar equipos..." onkeyup="filtrarEquipos()">
 
+    <div>
+        <header>
+            <div class="logo"> <!--Cramos una clase logo -->
+                <h1>Mi primera pagina web</h1>
+            </div>
 
-<script>
-function filtrarEquipos() {
-    const input = document.getElementById('buscador');
-    const filter = input.value.toLowerCase();
-    const ul = document.getElementById('listaEquipos');
-    const li = ul.getElementsByTagName('li');
-
-    for (let i = 0; i < li.length; i++) {
-        const texto = li[i].textContent || li[i].innerText;
-        li[i].style.display = texto.toLowerCase().includes(filter) ? '' : 'none';
-    }
-}
-</script>
-<p>
-    <h5>¡Bienvenidos a LIGAPRO2024! La pasión del fútbol ecuatoriano está más viva que nunca. 
-        Prepárense para una temporada llena de emoción, donde cada partido es una batalla por la gloria. 
-        Desde el primer silbato hasta el último minuto,
-         la rivalidad entre equipos encenderá los estadios y los corazones de los hinchas.</h5>
-    </p>
-
-    <!--PROXIMOS PARTIDOS-->
-    <h2>Próximos Partidos</h2>
-<table>
-    <tr>
-        <th>Partido</th>
-        <th>Fecha</th>
-        <th>Estadio</th>
-    </tr>
-    <tr>
-        
-            <tr>
-                <td>
-                    <img src="imagenes/orense.png" alt="Orense SC"> Orense SC vs  Libertad FC
-                    <img src="imagenes/libertad.png" alt="Libertad FC"> 
-                </td>
-                <td>18 de Octubre 2024 | 19:00 hs. (VIERNES)</td>
-                <td>Estadio 9 de Mayo</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Deportivo Cuenca.jpeg" alt="Deportivo Cuenca"> D. Cuenca vs  Independiente del Valle
-                    <img src="imagenes/Independiente Valle.png" alt="Independiente del Valle"> 
-                </td>
-                <td>25 de Octubre 2024 | 19:00 hs. (VIERNES)</td>
-                <td>Estadio Alejandro Serrano Aguilar</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/libertad.png" alt="Libertad FC"> Libertad FC vs  Aucas
-                    <img src="imagenes/Aucas.jpg" alt="Aucas"> 
-                </td>
-                <td>26 de Octubre 2024 | 14:00 hs. (SÁBADO)</td>
-                <td>Estadio Libertad</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/LDU Quito.jpeg" alt="Liga de Quito"> Liga de Quito vs  Mushuc Runa
-                    <img src="imagenes/Mushuc Runa.png" alt="Mushuc Runa"> 
-                </td>
-                <td>26 de Octubre 2024 | 16:30 hs. (SÁBADO)</td>
-                <td>Estadio Rodrigo Paz Delgado</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/U.CATOLICA.png" alt="U. Católica"> U. Católica de Quito vs  Emelec
-                    <img src="imagenes/emelec.png" alt="Emelec"> 
-                </td>
-                <td>26 de Octubre 2024 | 19:00 hs. (SÁBADO)</td>
-                <td>Estadio Olímpico Atahualpa</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Macará.jpg" alt="Macará"> Macará vs  Cumbayá FC
-                    <img src="imagenes/Cumbayá.jpeg" alt="Cumbayá FC"> 
-                </td>
-                <td>27 de Octubre 2024 | 13:00 hs. (DOMINGO)</td>
-                <td>Estadio Bellavista de Ambato</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/El Nacional.png" alt="El Nacional"> El Nacional vs  Orense SC
-                    <img src="imagenes/Orense.png" alt="Orense SC"> 
-                </td>
-                <td>27 de Octubre 2024 | 15:30 hs. (DOMINGO)</td>
-                <td>Estadio Atahualpa</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Barcelona.png" alt="Barcelona SC"> Barcelona vs Delfín
-                    <img src="imagenes/DEFIN.jpeg" alt="Delfín"> 
-                </td>
-                <td>27 de Octubre 2024 | 18:00 hs. (DOMINGO)</td>
-                <td>Estadio Monumental Banco Pichincha</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/imbabura.jpeg" alt="Imbabura SC"> Imbabura SC vs Técnico Universitario
-                    <img src="imagenes/Técnico_Universitario.png" alt="Técnico Universitario"> 
-                </td>
-                <td>28 de Octubre 2024 | 19:00 hs. (LUNES)</td>
-                <td>Estadio Olímpico de Ibarra</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Orense.png" alt="Orense SC"> Orense SC vs Delfín
-                    <img src="imagenes/DEFIN.jpeg" alt="Delfín"> 
-                </td>
-                <td>1 de Noviembre 2024 | 19:00 hs. (VIERNES)</td>
-                <td>Estadio 9 de Mayo</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Cumbayá.jpeg" alt="Cumbayá FC"> Cumbayá FC vs Deportivo Cuenca
-                    <img src="imagenes/Deportivo Cuenca.jpeg" alt="Deportivo Cuenca"> 
-                </td>
-                <td>2 de Noviembre 2024 | 14:00 hs. (SÁBADO)</td>
-                <td>Estadio La Inmaculada</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/libertad.png" alt="Libertad FC"> Libertad FC vs Imbabura SC
-                    <img src="imagenes/imbabura.jpeg" alt="Imbabura SC"> 
-                </td>
-                <td>2 de Noviembre 2024 | 16:30 hs. (SÁBADO)</td>
-                <td>Estadio Libertad</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Aucas.jpg" alt="Aucas"> Aucas vs Barcelona 
-                    <img src="imagenes/Barcelona.png" alt="Barcelona SC"> 
-                </td>
-                <td>2 de Noviembre 2024 | 19:00 hs. (SÁBADO)</td>
-                <td>Estadio Gonzalo Pozo Ripalda</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/MR_SC.png" alt="Mushuc Runa"> Mushuc Runa vs Macará
-                    <img src="imagenes/Macará.jpg" alt="Macará"> 
-                </td>
-                <td>3 de Noviembre 2024 | 12:30 hs. (DOMINGO)</td>
-                <td>Estadio Municipal La Cocha</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Independiente Valle.png" alt="Independiente del Valle"> Independiente del Valle vs El Nacional
-                    <img src="imagenes/El Nacional.png" alt="El Nacional"> 
-                </td>
-                <td>3 de Noviembre 2024 | 15:00 hs. (DOMINGO)</td>
-                <td>Estadio Banco Guayaquil</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Emelec.png" alt="Emelec"> Emelec vs Liga de Quito
-                    <img src="imagenes/LDU Quito.jpeg" alt="Liga de Quito"> 
-                </td>
-                <td>3 de Noviembre 2024 | 18:00 hs. (DOMINGO)</td>
-                <td>Estadio George Capwell</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Técnico_Universitario.png" alt="Técnico Universitario"> Técnico Universitario vs U. Católica de Quito
-                    <img src="imagenes/U.CATOLICA.png" alt="U. Católica"> 
-                </td>
-                <td>4 de Noviembre 2024 | 19:00 hs. (LUNES)</td>
-                <td>Estadio Bellavista de Ambato</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/DEFIN.jpeg" alt="Delfín"> Delfín vs Mushuc Runa
-                    <img src="imagenes/Mushuc Runa.png" alt="Mushuc Runa"> 
-                </td>
-                <td>8 de Noviembre 2024 | 19:00 hs. (VIERNES)</td>
-                <td>Estadio Jocay</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/U.CATOLICA.png" alt="U. Católica"> U. Católica de Quito vs Aucas
-                    <img src="imagenes/Aucas.jpg" alt="Aucas"> 
-                </td>
-                <td>9 de Noviembre 2024 | 13:30 hs. (SÁBADO)</td>
-                <td>Estadio Olímpico Atahualpa</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/Macará.jpg" alt="Macará"> Macará vs Emelec
-                    <img src="imagenes/Emelec.png" alt="Emelec"> 
-                </td>
-                <td>9 de Noviembre 2024 | 16:00 hs. (SÁBADO)</td>
-                <td>Estadio Bellavista de Ambato</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="imagenes/LDU Quito.jpeg" alt="Liga de Quito"> Liga de Quito vs Independiente del Valle
-                    <img src="imagenes/Independiente Valle.png" alt="Independiente del Valle"> 
-                </td>
-                <td>9 de Noviembre 2024 | 19:00 hs. (SÁBADO)</td>
-                <td>Estadio Rodrigo Paz Delgado</td>
-            </tr>
-            
-    </tr>
-</table>
-
-<div>
-    <h4>Calendario</h4>
-    <img src="imagenes/calendario_page-0001.jpg"  width="5000px" height="5000px" title="html"> 
-    
+            <div class="menu"> <!--Creamos una clase "Menu" y un menu -->
+                <ul>
+                    <a href=""></a><li>Inicio</li>
+                    <a href=""></a><li>Nosotros</li>
+                    <a href=""></a><li>Contacto</li>
+                </ul>
+            </div>
+        </header>
     </div>
-    
-<!-- tabla de posiciones de la fase 1-->
-<h3>Tabla de Posiciones - Fase 1</h3>
-<table>
-    <tr>
-        <th>Pos.</th>
-        <th>Equipo</th>
-        <th>PTS</th>
-        <th>PJ</th>
-        <th>G</th>
-        <th>E</th>
-        <th>P</th>
-        <th>GF</th>
-        <th>GC</th>
-        <th>DG</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Ind. del Valle</td>
-        <td>35</td>
-        <td>15</td>
-        <td>10</td>
-        <td>5</td>
-        <td>0</td>
-        <td>23</td>
-        <td>8</td>
-        <td>15</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Barcelona</td>
-        <td>31</td>
-        <td>15</td>
-        <td>9</td>
-        <td>4</td>
-        <td>2</td>
-        <td>24</td>
-        <td>8</td>
-        <td>16</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>LDU Quito</td>
-        <td>30</td>
-        <td>15</td>
-        <td>9</td>
-        <td>3</td>
-        <td>3</td>
-        <td>27</td>
-        <td>17</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Aucas</td>
-        <td>29</td>
-        <td>15</td>
-        <td>8</td>
-        <td>5</td>
-        <td>2</td>
-        <td>31</td>
-        <td>18</td>
-        <td>13</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>U. Católica</td>
-        <td>25</td>
-        <td>15</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
-        <td>31</td>
-        <td>20</td>
-        <td>11</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Emelec</td>
-        <td>25</td>
-        <td>15</td>
-        <td>6</td>
-        <td>7</td>
-        <td>2</td>
-        <td>17</td>
-        <td>12</td>
-        <td>5</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>El Nacional</td>
-        <td>21</td>
-        <td>15</td>
-        <td>8</td>
-        <td>0</td>
-        <td>7</td>
-        <td>17</td>
-        <td>16</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Mushuc Runa</td>
-        <td>18</td>
-        <td>15</td>
-        <td>5</td>
-        <td>3</td>
-        <td>7</td>
-        <td>18</td>
-        <td>19</td>
-        <td>-1</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Macará</td>
-        <td>18</td>
-        <td>15</td>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>11</td>
-        <td>13</td>
-        <td>-2</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Dep. Cuenca</td>
-        <td>16</td>
-        <td>15</td>
-        <td>3</td>
-        <td>7</td>
-        <td>5</td>
-        <td>25</td>
-        <td>24</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>Universitario</td>
-        <td>16</td>
-        <td>15</td>
-        <td>4</td>
-        <td>4</td>
-        <td>7</td>
-        <td>14</td>
-        <td>21</td>
-        <td>-7</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>Orense</td>
-        <td>15</td>
-        <td>15</td>
-        <td>3</td>
-        <td>6</td>
-        <td>6</td>
-        <td>10</td>
-        <td>17</td>
-        <td>-7</td>
-    </tr>
-</table>
-<!-- tabla de posiciones de la fase 2-->
-<h3>Tabla de Posiciones - Fase 2</h3>
-<table>
-    <tr>
-        <th>Pos.</th>
-        <th>Equipo</th>
-        <th>PTS</th>
-        <th>PJ</th>
-        <th>G</th>
-        <th>E</th>
-        <th>P</th>
-        <th>DG</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Ind. del Valle</td>
-        <td>16</td>
-        <td>8</td>
-        <td>5</td>
-        <td>1</td>
-        <td>2</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>LDU Quito</td>
-        <td>16</td>
-        <td>8</td>
-        <td>5</td>
-        <td>1</td>
-        <td>2</td>
-        <td>7</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Orense</td>
-        <td>16</td>
-        <td>8</td>
-        <td>5</td>
-        <td>1</td>
-        <td>2</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Mushuc Runa</td>
-        <td>15</td>
-        <td>8</td>
-        <td>4</td>
-        <td>3</td>
-        <td>1</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>U. Católica</td>
-        <td>13</td>
-        <td>8</td>
-        <td>4</td>
-        <td>1</td>
-        <td>3</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Macará</td>
-        <td>13</td>
-        <td>8</td>
-        <td>4</td>
-        <td>1</td>
-        <td>3</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>Barcelona</td>
-        <td>13</td>
-        <td>8</td>
-        <td>4</td>
-        <td>1</td>
-        <td>3</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Universitario</td>
-        <td>11</td>
-        <td>8</td>
-        <td>3</td>
-        <td>2</td>
-        <td>3</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Delfín</td>
-        <td>11</td>
-        <td>8</td>
-        <td>3</td>
-        <td>2</td>
-        <td>3</td>
-        <td>-1</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>El Nacional</td>
-        <td>11</td>
-        <td>8</td>
-        <td>3</td>
-        <td>2</td>
-        <td>3</td>
-        <td>-2</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>Imbabura</td>
-        <td>10</td>
-        <td>8</td>
-        <td>3</td>
-        <td>1</td>
-        <td>4</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>Libertad</td>
-        <td>9</td>
-        <td>8</td>
-        <td>2</td>
-        <td>3</td>
-        <td>3</td>
-        <td>-4</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>Dep. Cuenca</td>
-        <td>7</td>
-        <td>8</td>
-        <td>3</td>
-        <td>1</td>
-        <td>4</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>Emelec</td>
-        <td>6</td>
-        <td>8</td>
-        <td>3</td>
-        <td>0</td>
-        <td>5</td>
-        <td>-3</td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>Cumbayá</td>
-        <td>4</td>
-        <td>8</td>
-        <td>1</td>
-        <td>1</td>
-        <td>6</td>
-        <td>-8</td>
-    </tr>
-    <tr>
-        <td>16</td>
-        <td>Aucas</td>
-        <td>4</td>
-        <td>8</td>
-        <td>1</td>
-        <td>1</td>
-        <td>6</td>
-        <td>-10</td>
-    </tr>
-</table>
 
-<!-- resultados de los ultimos partidos-->
-<h3>Resultados</h3>
-<table>
-    <tr>
-        <th>Partido</th>
-        <th>Resultado</th>
-        <th>Estadio</th>
-    </tr>
-    <tr>
-        <td><img src="imagenes/U.CATOLICA.png" alt="Universidad Católica"> Universidad Católica vs Delfin   <img src="imagenes/DEFIN.jpeg" alt="Delfin"> </td>
-        <td>1 - 0</td>
-        <td>Estadio Olímpico Atahualpa</td>
-    </tr>
-    <tr>
-        <td><img src="imagenes/emelec.png" alt="Emelec"> Emelec vs Técnico Universitario  <img src="imagenes/Técnico_Universitario.png" alt="Técnico Universitario"> </td>
-        <td>3 - 1</td>
-        <td>Estadio George Capwell Banco del Austro</td>
-    </tr>
-    <tr>
-        <td><img src="imagenes/Mushuc Runa.png" alt="Mushuc Runa"> Mushuc Runa vs Orense  <img src="imagenes/orense.png" alt="Orense"> </td>
-        <td>0 - 2</td>
-        <td>Estadio Municipal La Cocha</td>
-    </tr>
-    <tr>
-        <td><img src="imagenes/Macará.jpg" alt="Macará"> Macará vs Imbabura  <img src="imagenes/imbabura.jpeg" alt="Imbabura"> </td>
-        <td>0 - 2</td>
-        <td>Estadio Bellavista de Ambato</td>
-    </tr>
-    <tr>
-        <td><img src="imagenes/Deportivo Cuenca.jpeg" alt="Deportivo Cuenca"> Deportivo Cuenca vs Barcelona <img src="imagenes/Barcelona.png" alt="Barcelona"> </td>
-        <td>0 - 1</td>
-        <td>Estadio Alejandro Serrano Aguilar Banco del Austro</td>
-    </tr>
-    <tr>
-        <td><img src="imagenes/LDU Quito.jpeg" alt="LDU Quito"> LDU Quito vs El Nacional <img src="imagenes/El Nacional.png" alt="El Nacional"> </td>
-        <td>1 - 1</td>
-        <td>Estadio Rodrigo Paz Delgado</td>
-    </tr>
-    <tr>
-        <td><img src="imagenes/Cumbayá.jpeg" alt="Cumbayá"> Cumbayá vs  Aucas  <img src="imagenes/Aucas.jpg" alt="Aucas"> </td>
-        <td>0 - 3</td>
-        <td>Estadio Olímpico Atahualpa</td>
-    </tr>
-    <tr>
-        <td><img src="imagenes/libertad.png" alt="Libertad"> Libertad vs Independiente Valle <img src="imagenes/Independiente Valle.png" alt="Independiente Valle"> </td>
-        <td>1 - 1</td>
-        <td>Estadio Federativo Reina del Cisne</td>
-    </tr>
-</table>
+    <h1>Mi pagina web </h1>
+    <h2>Mi primera página web</h2>
+    <h3>Mi primera paghina </h3>
+    <h4>Mi primera página web </h4>
+    <h5>Mi primera pagina web </h5>
+    <p>
+        hola
+    </p>
+    <p>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam fugiat maxime, ratione aliquid, iste harum tenetur,
+        tempora rem saepe illum officiis pariatur nisi corrupti! Tempore nisi quia nemo veniam ad.</h5>
+    </p>
+    <section style="border: 1px solid; text-align: center; border-color: red;">
+        Crea seccion
 
+    </section>
+    <p class="parrafo"> <!--Creamos una clase parrafo -->
 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ea repellat maxime quasi obcaecati
+        suscipit eligendi at deserunt totam sint quaerat tempora nulla sed, dignissimos, deleniti laboriosam aperiam
+        ipsum saepe!
 
+    </p>
+    <article>
+
+    </article>
+<!--Enlacces de la pagina-->
+    <div>
+        <h1> enlaces</h1>
+        <a href="https://youtu.be/2rN96OZnqKI?si=02iFUfl-ca4nTtLJ">video a youtube</a>
+    </div>
+    <div>
+        <h2>imagenes</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Xg5ALo4CiRWCnNFriEZwMd4fANIYfqtcPQ&s"
+            alt="imagen html" width="50px" height="50px" title="html">
+
+    </div>
+    <!--table-->
+    <table border="5px">
+        <tr>
+        <td> paises</td>
+        <td>continentes</td>
+        <td>poblacion </td>
+    </tr>
+        <thead>
+            <th> Paises</th>
+            <th>Continentes</th>
+            <th>Poblacion </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Ecuador </td>
+                <td> sur america </td>
+                <td>18000000 millones </td>
+            </tr>
+            <tr>
+                <td> España </td>
+                <td> Europeo </td>
+                <td> 47.78 millones </td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td>Sur america</td>
+                <td>215.3 millones</td>
+            </tr>
+            <td>china</td>
+            <td>asia</td>
+            <td>1.412 miles de millones </td>
+            <tr>
+                <td>Polonia </td>
+                <td> Europa </td>
+                <td> 36.82 millones </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <div>
+        <h2> Listas desordenadas </h2>
+        <ul>
+            <li> Ecuador</li>
+            <li>Colombia</li>
+            <li>Peru</li>
+            <li>Venezuela</li>
+        </ul>
+        <h2> listas desordenadas</h2>
+        <ol>
+            <li>Ecuador</li>
+            <li>Colombia</li>
+            <li>España</li>
+            <li>Peru</li>
+            <li>Italia</li>
+        </ol>
+    </div>
+    <!--Formulario-->
+    <div>
+        <h1>Formulario</h1>
+        <form action="" method="get"></form>
+        <label for="nombre">Ingrese el nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese el nombre" required />
+        <input type="submit" value="Enviar">
+    </div>
 </body>
+
 </html>
